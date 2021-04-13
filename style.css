@@ -157,7 +157,7 @@ nav {
 }
 
 .about_title:after {
-    content: url("assets/images/menu/devider.png");
+    content: url("assets/images/menu/divider.png");
     display: block;
     margin-top: -10px;
     margin-bottom: 10px;
@@ -365,7 +365,7 @@ nav {
 
 }
 
-.review_content_devider {
+.review_content_divider {
     margin-bottom: 22px;
     margin-top: 15px;
     width: 230px;
@@ -443,7 +443,7 @@ nav {
     padding-top: 7px;
 }
 
-.reservations_content_description_devider {
+.reservations_content_description_divider {
     width: 250px;
     margin-top: 6px;
     margin-bottom: 27px;
@@ -517,7 +517,101 @@ nav {
 }
 
 
+.footer {
+    background-image: url("assets/images/footer/bg.png");
+    height: 320px;
+    padding-left: 215px;
+    padding-top: 56px;
+}
 
+.footer_content {
+    width: 1100px;
+    height: 218px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer_content_block {
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+
+.footer_content_block_divider {
+    width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+    margin-top: 16px;
+    margin-bottom: 19px;
+}
+
+.footer_content_block_header {
+    font-family: "Yeseva One", sans-serif;
+    font-size: 21px;
+}
+
+.footer_content_block_text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+.about_block {
+    width: 370px;
+}
+
+.open_block {
+	width: 230px;
+    margin-left: 115px;
+}
+
+.location_block {
+	width: 230px;
+    margin-left: 200px;
+}
+
+.footer_social_contacts {
+    display: flex;
+    width: 96px;
+    font-size: 13px;
+    justify-content: space-between;
+    margin-top: 52px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.footer_social_contacts a {
+	text-decoration: none;
+	color: #fefefe;
+    cursor: pointer;
+}
+
+.footer_social_contacts a:hover {
+   transform: scale(1.2);
+}
+
+.footer_payments {
+    display: flex;
+    width: 125px;
+    font-size: 12px;
+    justify-content: space-between;
+    margin-top: 53px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.footer_payments li {
+    cursor: pointer;
+}
+
+.footer_payments li:hover {
+	transform: scale(1.2);
+}
 
 
 

@@ -13,7 +13,7 @@ function checkParameters() {
 }
 
 function submitForm(e) {
-	let result = window.confirm("Вы действительно хотите эти данные?");
+	let result = window.confirm("Вы действительно хотите отправить эти данные?");
 	if (result) {
 		let name = document.getElementById('name').value;
 		let email = document.getElementById('email').value;
