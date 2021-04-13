@@ -2,11 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Lato&family=Yeseva+One&display=swap" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/af9d2d7781.js" crossorigin="anonymous"></script>
-        <title>Lambda</title>
+        <script src="form.js"></script>
+		<title>Lambda</title>
     </head>
 
     <body>
@@ -15,24 +16,24 @@
                 <h1 class="logo">LAMBDA</h1>
                 <div class="header_content">
                     <nav>
-                        <a class="nav__link" href="#">Home</a>
-                        <a class="nav__link" href="#">About</a>
-                        <a class="nav__link" href="#">Igredients</a>
-                        <a class="nav__link" href="#">Menu</a>
-                        <a class="nav__link" href="#">Reviews</a>
-                        <a class="nav__link" href="#">Reservations</a>
-                        <div class="header__social">
-                            <a href="https://twitter.com/?lang=ru" target="_blank"><i class="header__link fab fa-twitter"></i></a>
-                            <a href="https://www.youtube.com/" target="_blank"><i class="header__link fab fa-youtube"></i></a>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="header__link fab fa-facebook-f"></i></a>
+                        <a class="nav_link" href="#">Home</a>
+                        <a class="nav_link" href="#">About</a>
+                        <a class="nav_link" href="#">Igredients</a>
+                        <a class="nav_link" href="#">Menu</a>
+                        <a class="nav_link" href="#">Reviews</a>
+                        <a class="nav_link" href="#">Reservations</a>
+                        <div class="header_social">
+                            <a href="https://twitter.com/?lang=ru" target="_blank"><i class="header_link fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="header_link fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="header_link fab fa-facebook-f"></i></a>
                         </div>
                     </nav>
                 </div>
             </div>
-            <div class="header__main">
-                <h1 class="header__title1">the right ingredients</h1>
-                <h1 class="header__title2">for the right food</h1>
-                <img class="header__img" src="assets/images/intro/Decoration-2.png" alt="" />
+            <div class="header_main">
+                <h1 class="header_title1">the right ingredients</h1>
+                <h1 class="header_title2">for the right food</h1>
+                <img class="header_img" src="assets/images/intro/Decoration-2.png" alt="" />
 				<div class="promo_buttons">
 					<button>BOOK A TABLE</button>
 					<button class="second_button">SEE THE MENU</button>
@@ -41,25 +42,25 @@
         </section>
 
         <section class="about">
-			<div class="about__text">
-				<h2 class="about__title">Just the right food</h2>
+			<div class="about_text">
+				<h2 class="about_title">Just the right food</h2>
 				<p>
 					If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees
 					make us hard to resist! Stop in today and check us out!
 				</p>
-				<img class="about__img" src="assets/images/about/cook.png" alt="" />
+				<img class="about_img" src="assets/images/about/cook.png" alt="" />
 			</div>
-			<img class="about__item" src="assets/images/about/dish.png" alt="" />
+			<img class="about_item" src="assets/images/about/dish.png" alt="" />
         </section>
 
         <section class="ingredients">
-			<div class="ingredients__text">
-				<h2 class="ingredients__title">Fine ingredients</h2>
+			<div class="ingredients_text">
+				<h2 class="ingredients_title">Fine ingredients</h2>
 				<p>
 					If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees
 					make us hard to resist! Stop in today and check us out!
 				</p>
-				<div class="ingredients__imgs">
+				<div class="ingredients_imgs">
 					<img src="assets/images/ingredients/1.png" alt="" />
 					<img src="assets/images/ingredients/2.png" alt="" />
 					<img src="assets/images/ingredients/3.png" alt="" />
@@ -201,6 +202,65 @@
 					<div class="review_content_author">
 						- food inc, New York
 					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="reservations">
+			<div class="reservations_content">
+				<div class="reservations_content_images">
+					<img class="reservations_content_images_first" src="assets/images/reservations/first.png" alt="">
+					<img src="assets/images/reservations/second.png" alt="">
+			onSubmit="return submit(event)"	</div>
+				<div class="reservations_content_description&form">
+					<div class="reservations_content_description">
+						<div class="reservations_content_description_header">
+							Just the right food
+						</div>
+						<img src="assets/images/reservations/devider.png" alt=""
+						class="reservations_content_description_devider">
+						<div class="reservations_content_description_content">
+							<p class="content_first_p">If you've been to one of our restaurants, you've seen -
+								and tasted - what keeps our customers coming back for
+								more. Perfect materials and freshly baked food.</p>
+							<p>Delicious Lambda cakes, muffins, and gourmet coffees
+								make us hard to resist! Stop in today and check us out!
+								Perfect materials and freshly baked food.</p>
+						</div>
+					</div>
+					<form onsubmit="submitForm(event)" class="reservations_content_form">
+						<div class="reservations_content_form_fields">
+							<div class="input_field">
+								<label for="name">Name</label>
+								<input class="reservations_content_form_field" 
+									id="name" placeholder="your name *" 
+									onchange="checkParameters()">
+							</div>
+							<div class="input_field">
+								<label for="email">Name</label>
+								<input class="reservations_content_form_field" 
+									type="email" id="email" placeholder="your email *" 
+									onchange="checkParameters()">
+							</div>
+							<div class="input_field">
+								<label for="date">Date</label>
+								<input class="reservations_content_form_field" 
+									id="date" type="date" 
+									onchange="checkParameters()">
+							</div>
+							<div class="input_field">
+								<label for="partyNumber">Party number</label>
+								<input class="reservations_content_form_field" 
+									id="partyNumber" 
+									placeholder="part number" 
+									onchange="checkParameters()">
+							</div>
+						</div>
+						<button disabled="disabled" type="submit" 
+								id="submitButton">
+								Book now!
+						</button>
+					</form>
 				</div>
 			</div>
 		</section>
