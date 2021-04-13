@@ -169,7 +169,7 @@ nav {
     padding-left: 70px;
 }
 
-.about__dish {
+.about__item {
     margin-top: 55px;
     margin-left: 28px;
 }
@@ -225,6 +225,107 @@ nav {
     margin-left: 30px;
     padding: 0;
 }
+
+
+.menu {
+    background-image: url("../images/menu/bg.jpg");
+	display: flex;
+    justify-content: space-between;
+}
+
+.menu_column {
+    width: 455px;
+	margin-top: 65px;
+	margin-bottom: 70px;
+}
+
+.first_menu_column {
+	margin-left: 270px;
+}
+
+.second_menu_column {
+    margin-right: 270px;
+}
+
+.menu_item_type {
+    margin-bottom: 20px;
+}
+
+.menu_item_type:last-child {
+    margin-bottom: 0;
+}
+
+.item_type_title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    color: #cc9900;
+
+    text-align: center;
+}
+
+.item_type_divider {
+	padding-bottom: 41px;
+	margin-left: 104px;
+}
+
+.item_type_content {
+    list-style: none;
+    margin-top: -53px;
+}
+
+.item {
+    padding: 5px 10px 10px;
+	position: relative;
+}
+
+.item_special:before {
+	content: "Special";
+    width: 70px;
+    height: 21px;
+
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #f8fafa;
+	
+	position: absolute;
+    margin-top: -26px;
+    margin-left: 374px;
+    background-color: rgba(204, 153, 0, .5);
+}
+
+.item_special_padding {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.item_special {
+    border: 1px solid rgba(200, 159, 45, .4);
+}
+
+.item_header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Yeseva One', cursive;
+    font-size: 21px;
+    color: #c89f2d;
+    margin-bottom: 3px;
+    border-bottom: 1px solid rgba(200, 159, 45, .4);
+}
+
+.item_title {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+
+.item_text {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #4c4c4c;
+}
+
 
 
 
