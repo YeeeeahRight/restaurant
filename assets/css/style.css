@@ -4,11 +4,6 @@
     border: 0px;
     padding: 0px;
 }
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'Yeseva One', cursive;
@@ -18,12 +13,12 @@ body {
     width: 1600px;
 }
 
-.intro_block {
+.promo {
     height: 750px;
     background: url("../images/intro/intro.jpg") center no-repeat;
 }
 
-.intro_block .header {
+.promo .header {
     width: 1600px;
     height: 110px;
     display: flex;
@@ -37,20 +32,22 @@ body {
     font-size: 36.03px;
     color: #ECECEC;
 }
+
 h1 {
     font-weight: 400;
 }
+
 .header_content {
-   
-     margin-right: 215px;
+    margin-right: 215px;
     display: flex;
 }
+
 .header__main {
     height: 640px;
     padding-top: 110px;
-    padding-bottom: 141px;
-    
+    padding-bottom: 141px;  
 }
+
 .header__title1 {
     font-size: 90px;
     margin-left: 327px;
@@ -70,26 +67,15 @@ h1 {
     margin-bottom: 10px;
 }
 
-.button_empty, .button_full {
-    background-color: rgba(0,0,0,0.5);;
-    border: 2px solid black;
+.promo_buttons {
+	display: flex;
+	justify-content: center;
 }
 
-.button_empty {
-    margin-left: 556px;
-}
-
-.button_full {
-    margin-left: 20px;
-}
-
-.button_empty:hover, .button_full:hover {
-    background-color: rgba(255,255,255,0.5);;
-    border: 2px solid white;
-}
-
-button {
-    height: 57px;
+.promo_buttons button {
+	background-color: rgba(0,0,0,0.5);
+    border: 2px solid black;	
+	height: 57px;
     width: 228px;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
@@ -98,34 +84,33 @@ button {
     cursor: pointer;
 }
 
+.promo_buttons button:hover {
+    background-color: rgba(255,255,255,0.5);
+    border: 2px solid white;
+}
+
+.promo_buttons .second_button {
+	margin-left: 30px;
+}
+
 nav {
     font-family: 'Gentium Book Basic', serif;
     font-size: 21px;
     
     display: flex;
-    justify-content: space-between;
-   
 }
 
 .nav__link {
     color: #F8F6F4;
     text-decoration: none;
     transition: color 0.2s linear;
-     margin-right: 50px;
-    
+    margin-right: 50px;
+	padding-top: 45px;
 }
 
 .nav__link:hover {
-     border-top: 3px solid rgba(255, 255, 255, 0.7);
-    
-}
-
-.nav__link:first-child {
-    margin-left: 0;
-}
-
-nav a {
-    margin-top: 45px;
+    border-top: 3px solid rgba(255, 255, 255, 0.7);
+	padding-top: 42px;
 }
 
 .header__social {
@@ -140,22 +125,16 @@ nav a {
     transition: transform .1s linear;
 }
 
-.header__link:first-child {
-    margin-left: 0;
-}
-
 .header__link:hover {
     transform: scale(1.2);
 }
 
-.section--about {
+
+.about {
     background: url('../images/about/bg.jpg') no-repeat center;
     background-size: cover;
     height: 710px;
-}
-
-.about {
-    display: flex;
+	display: flex;
 }
 
 .about__text {
@@ -197,13 +176,11 @@ nav a {
 
 
 
-.section--ingredient {
+.ingredients {
     background: url('../images/ingredients/bg.png') no-repeat center;
     background-size: cover;
     height: 758px;
-}
-.ingredients {
-    display: flex;
+	display: flex;
 }
 
 .ingredients__text {
@@ -244,10 +221,6 @@ nav a {
 .ingredients__imgs img {
     margin-left: 30px;
     padding: 0;
-}
-
-.ingredients__imgs img:first-child {
-    margin-left: 0;
 }
 
 
