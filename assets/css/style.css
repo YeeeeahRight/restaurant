@@ -8,7 +8,6 @@
 body {
     font-family: 'Yeseva One', cursive;
     font-size: 36px;
-    line-height: 1.6;
     color: #f4f4f5;
     width: 1600px;
 }
@@ -231,12 +230,16 @@ nav {
     background-image: url("../images/menu/bg.jpg");
 	display: flex;
     justify-content: space-between;
+	height: 994px;
 }
 
 .menu_column {
     width: 455px;
-	margin-top: 65px;
-	margin-bottom: 70px;
+	margin-top: 100px;
+	margin-bottom: 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .first_menu_column {
@@ -248,14 +251,12 @@ nav {
 }
 
 .menu_item_type {
-    margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.menu_item_type:last-child {
-    margin-bottom: 0;
-}
-
-.item_type_title {
+.menu_item_type_title {
     font-family: 'Yeseva One', cursive;
     font-size: 36px;
     font-weight: 400;
@@ -264,22 +265,19 @@ nav {
     text-align: center;
 }
 
-.item_type_divider {
-	padding-bottom: 41px;
-	margin-left: 104px;
+.menu_item_type_divider {
+	width: 247px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 14px;
+	margin-bottom: 4px;
 }
 
-.item_type_content {
-    list-style: none;
-    margin-top: -53px;
+.menu_item {
+    padding: 11px 10px 10px;
 }
 
-.item {
-    padding: 5px 10px 10px;
-	position: relative;
-}
-
-.item_special:before {
+.menu_item_special:before {
 	content: "Special";
     width: 70px;
     height: 21px;
@@ -290,41 +288,119 @@ nav {
     color: #f8fafa;
 	
 	position: absolute;
-    margin-top: -26px;
+	margin-top: -22px;	
     margin-left: 374px;
     background-color: rgba(204, 153, 0, .5);
 }
 
-.item_special_padding {
-	margin-top: 10px;
+.menu_item_special_padding {
+	margin-top: 15px;
 	margin-bottom: 10px;
 }
 
-.item_special {
-    border: 1px solid rgba(200, 159, 45, .4);
-}
-
-.item_header {
+.menu_item_header {
     display: flex;
     justify-content: space-between;
     font-family: 'Yeseva One', cursive;
     font-size: 21px;
     color: #c89f2d;
-    margin-bottom: 3px;
+	padding-bottom: 7px;
     border-bottom: 1px solid rgba(200, 159, 45, .4);
 }
 
-.item_title {
+.menu_item_special {
+    border: 1px solid rgba(200, 159, 45, .4);
+	padding: 0px 9px 9px;
+}
+
+.menu_item_title {
     font-size: 21px;
     font-weight: 400;
 }
 
-
-.item_text {
+.menu_item_text {
+	padding-top: 10px;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #4c4c4c;
 }
+
+
+.reviews {
+    background-image: url("../images/reviews/bg.jpg");
+    display: flex;
+    justify-content: center;
+    height: 758px;
+}
+
+.reviews_content {
+    padding-top: 76px;
+	margin-top: 100px;
+    width: 770px;
+    height: 557px;
+}
+
+.review_back {
+    width: 770px;
+    height: 557px;
+    position: absolute;
+	margin-top: -76px;
+    background-image: url("../images/reviews/content-bg.png");
+}
+
+.review_content {
+    z-index: 1;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review_content_header {
+    text-align: center;
+    font-weight: 400;
+    font-family: "Yeseva One", sans-serif;
+    font-size: 36px;
+
+}
+
+.review_content_devider {
+    margin-bottom: 22px;
+    margin-top: 15px;
+    width: 230px;
+}
+
+.review_content_text::before {
+    color: rgb(153, 155, 153);
+    content: "“";
+    font-weight: normal;
+    font-family: Georgia, "Georgia Regular", sans-serif;
+    font-size: 96px;
+    position: absolute;
+    left: -41px;
+    top: 8px;
+}
+
+.review_content_text {
+    position: relative;
+    width: 632px;
+    font-size: 25px;
+    line-height: 45px;
+    color: #dde0df;
+    font-weight: 700;
+    font-family: "Gentium Book Basic", sans-serif;
+    text-align: center;
+}
+
+.review_content_author {
+    margin-top: 34px;
+    color: #dde0df;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+}
+
 
 
 
