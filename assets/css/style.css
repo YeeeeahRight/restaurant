@@ -215,13 +215,18 @@ nav {
 .ingredients__imgs {
     margin-top: 65px;
     margin-bottom: 79px;
+}
 
+.ingredients__imgs img:first-child {
+    margin-left: 0;
 }
 
 .ingredients__imgs img {
     margin-left: 30px;
     padding: 0;
 }
+
+
 
 
 
