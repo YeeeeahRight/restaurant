@@ -32,7 +32,7 @@ body {
     color: #ECECEC;
 }
 
-h1 {
+h2, h1 {
     font-weight: 400;
 }
 
@@ -172,6 +172,7 @@ nav {
 .about_item {
     margin-top: 55px;
     margin-left: 28px;
+	margin-bottom: 30px;
 }
 
 
