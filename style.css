@@ -37,7 +37,7 @@ h1 {
 }
 
 .header_content {
-    margin-right: 215px;
+    margin-right: 202px;
     display: flex;
 }
 
@@ -55,6 +55,7 @@ h1 {
 
 .header_title2 {
     font-size: 90px;
+    margin-top: 38px;
     margin-left: 407px;
     margin-bottom: 15px;
 }
@@ -62,8 +63,8 @@ h1 {
 .header_img {
     width: 235px;
     margin-left: 685px;
-    margin-top: -65px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 22px;
 }
 
 .promo_buttons {
@@ -113,7 +114,7 @@ nav {
 }
 
 .header_social {
-    margin-left: -55px;
+    margin-left: -40px;
     margin-top: 45px;
     font-size: 21px;
 }
