@@ -9,12 +9,19 @@ body {
     font-family: 'Yeseva One', cursive;
     font-size: 36px;
     color: #f4f4f5;
-    width: 1600px;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1250px;
+	height: 100%;
 }
 
 .promo {
     height: 750px;
     background: url("assets/images/intro/intro.jpg") center no-repeat;
+	background-size: cover;
 }
 
 .promo .header {
@@ -137,9 +144,13 @@ nav {
 	display: flex;
 }
 
+.about_content {
+	display: flex;
+}
+
 .about_text {
-    margin-top: 93px;
-    margin-left: 294px;
+    margin-top: 107px;
+    margin-left: 120px;
     width: 415px;
     height: 500px;
     font-family: "Lato", serif;
@@ -184,12 +195,16 @@ nav {
 	display: flex;
 }
 
+.ingredients_content {
+	display: flex;
+}
+
 .ingredients_text {
     width: 570px;
-    height: 557px;
-    padding: 73px 81px 0;
+	height: 558px;
+	padding: 83px 81px 0;
     margin-top: 100px;
-    margin-left: 815px;
+    margin-left: 600px;
     font-family: "Lato", serif;
     font-size: 16px;
     text-align: center;
@@ -229,17 +244,17 @@ nav {
 
 
 .menu {
-    background-image: url("assets/images/menu/bg.jpg");
-	display: flex;
-    justify-content: space-between;
+    background: url("assets/images/menu/bg.jpg") no-repeat center;
+	background-size: cover;
 	height: 994px;
 }
 
 .menu_container {
 	display: flex;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
+    justify-content: space-between;
+    padding-left: 95px;
+	padding-right: 95px;
+	height: 100%;
 }
 
 .menu_column {
@@ -249,10 +264,6 @@ nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
-
-.first_menu_column {
-	margin-right: 144px;
 }
 
 .menu_item_type {
@@ -332,21 +343,22 @@ nav {
 
 
 .reviews {
-    background-image: url("assets/images/reviews/bg.jpg");
-    display: flex;
-    justify-content: center;
+    background: url("assets/images/reviews/bg.jpg") repeat center;
+    background-size: cover;
     height: 758px;
 }
 
-.review_content {
-	margin-top: auto;
-    margin-bottom: auto;
-	width: 770px;
-    height: 557px;
+.reviews_content {
+	padding-top: 100px;
+	padding-right: 240px;
+	padding-left: 240px;
+}
+
+.review {
 	background-color: rgba(0, 0, 0, .9);
-    position: relative;
-    color: white;
-    display: flex;
+	color: white;
+	display: flex;
+	height: 557px;
     flex-direction: column;
     align-items: center;
 }
@@ -397,28 +409,30 @@ nav {
 
 
 .reservations {
-    background-image: url("assets/images/reservations/reservations_bg.png");
+    background: url("assets/images/reservations/reservations_bg.png") no-repeat center;
+	background-size: cover;
     height: 710px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 215px;
 }
 
 .reservations_content {
-    width: 1100px;
-    height: 508px;
+	padding: 100px 40px;
     display: flex;
     justify-content: space-between;
 }
 
+.reservations_content_images {
+	width: 571px;
+}
+
 .reservations_content_images_first {
-    margin-right: 26px;
+    margin-right: 20px;
 }
 
 .reservations_content_description\&form {
     display: flex;
     flex-direction: column;
-    width: 430px;
+    width: 500px;
+	padding-right: 70px;
 }
 
 .reservations_content_description {
@@ -515,16 +529,11 @@ nav {
 .footer {
     background-image: url("assets/images/footer/bg.png");
     height: 320px;
-    padding-left: 215px;
-    padding-top: 56px;
 }
 
 .footer_content {
-    width: 1100px;
-    height: 218px;
+	padding: 50px 40px 60px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .footer_content_block {
@@ -596,10 +605,10 @@ nav {
 
 .footer_payments {
     display: flex;
-    width: 125px;
+    width: 118px;
     font-size: 12px;
     justify-content: space-between;
-    margin-top: 53px;
+    margin-top: 50px;
 	margin-right: auto;
 	margin-left: auto;
 }
