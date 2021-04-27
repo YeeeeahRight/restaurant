@@ -235,6 +235,13 @@ nav {
 	height: 994px;
 }
 
+.menu_container {
+	display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .menu_column {
     width: 455px;
 	margin-top: 100px;
@@ -245,11 +252,7 @@ nav {
 }
 
 .first_menu_column {
-	margin-left: 270px;
-}
-
-.second_menu_column {
-    margin-right: 270px;
+	margin-right: 144px;
 }
 
 .menu_item_type {
@@ -291,7 +294,7 @@ nav {
 	
 	position: absolute;
 	margin-top: -22px;	
-    margin-left: 374px;
+    margin-left: 375px;
     background-color: rgba(204, 153, 0, .5);
 }
 
@@ -335,23 +338,12 @@ nav {
     height: 758px;
 }
 
-.reviews_content {
-    padding-top: 76px;
-	margin-top: 100px;
-    width: 770px;
-    height: 557px;
-}
-
-.review_back {
-    width: 770px;
-    height: 557px;
-    position: absolute;
-	margin-top: -76px;
-    background-image: url("assets/images/reviews/content-bg.png");
-}
-
 .review_content {
-    z-index: 1;
+	margin-top: auto;
+    margin-bottom: auto;
+	width: 770px;
+    height: 557px;
+	background-color: rgba(0, 0, 0, .9);
     position: relative;
     color: white;
     display: flex;
@@ -360,11 +352,11 @@ nav {
 }
 
 .review_content_header {
+	margin-top: 80px;
     text-align: center;
     font-weight: 400;
     font-family: "Yeseva One", sans-serif;
     font-size: 36px;
-
 }
 
 .review_content_divider {
@@ -494,14 +486,14 @@ nav {
     width: 200px;
     height: 35px;
     margin-top: 5px;
-	outline-style: auto;
-    outline-color: rgb(200,198,198);
     font-size: 16px;
-    padding-left: 13px;
-    padding-top: 4px;
+	padding: 6px 10px 6px 15px;
+	border: 1px solid #c8c6c6;
     color: #7c7c7c;
-    cursor: pointer;
+    cursor: text;
+	border-radius: 0;
     font-weight: 400;
+	outline: none;
     font-style: italic;
     font-family: "Open Sans", sans-serif;
 }
@@ -562,6 +554,10 @@ nav {
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
     text-align: center;
+}
+
+.bold_text {
+	font-weight: bold;
 }
 
 .about_block {
