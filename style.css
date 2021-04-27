@@ -3,6 +3,11 @@
     margin: 0px;
     border: 0px;
     padding: 0px;
+	color: inherit;
+}
+
+a {
+	text-decoration: none;	
 }
 
 body {
@@ -19,121 +24,158 @@ body {
 }
 
 .promo {
-    height: 750px;
-    background: url("assets/images/intro/intro.jpg") center no-repeat;
-	background-size: cover;
+    background: url("assets/images/intro/intro.jpg") no-repeat center;
+    position: relative;
+    background-size: cover;
 }
 
-.promo .header {
-    width: 1600px;
-    height: 110px;
+.header {
     display: flex;
-    justify-content: space-between;
-    background: linear-gradient(rgba(0,0,0,.6), rgba(255,255,255,0));
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 37px;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
 }
 
-.logo {
-    margin-top: 35px;
-    margin-left: 175px;
+.header__logo {
+    width: 395px;
     font-size: 36.03px;
-    color: #ECECEC;
-}
-
-h2, h1 {
-    font-weight: 400;
-}
-
-.header_content {
-    margin-right: 202px;
-    display: flex;
-}
-
-.header_main {
-    height: 640px;
-    padding-top: 110px;
-    padding-bottom: 141px;  
-}
-
-.header_title1 {
-    font-size: 90px;
-    margin-left: 327px;
-    margin-bottom: -25px;
-}
-
-.header_title2 {
-    font-size: 90px;
-    margin-top: 38px;
-    margin-left: 407px;
-    margin-bottom: 15px;
-}
-
-.header_img {
-    width: 235px;
-    margin-left: 685px;
-    margin-top: 20px;
-    margin-bottom: 22px;
-}
-
-.promo_buttons {
-	display: flex;
-	justify-content: center;
-}
-
-.promo_buttons button {
-	background-color: rgba(0,0,0,0.5);
-    border: 2px solid black;	
-	height: 57px;
-    width: 228px;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-family: "Yeseva One", sans-serif;
     color: white;
-    transition: 0.3s;
+    padding-left: 2px;
+    letter-spacing: 0.01rem;
+    z-index: 5;
+    text-decoration: none;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 5;
+}
+
+.header__nav__list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 715px;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+
+.header__nav__item:before{
+    display: block;
+    position: absolute;
+    top: -48px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #c3c1b9;
+    content: "";
+    z-index: 5;
+}	
+
+.header__nav__item:hover:before{
+    width: 100%;
+}
+
+i {
+    font-size: 21px;
+}
+
+.header__nav__item {
+    font-family: "Gentium Book Basic", sans-serif;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    position: relative;
     cursor: pointer;
 }
 
-.promo_buttons button:hover {
-    background-color: rgba(255,255,255,0.5);
-    border: 2px solid white;
-}
-
-.promo_buttons .second_button {
-	margin-left: 30px;
-}
-
-nav {
-    font-family: 'Gentium Book Basic', serif;
-    font-size: 21px;
-    
+.header__social {
     display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100px;
+    justify-content: space-between;
+
+    margin-left: 19px;
+    margin-right: 19px;
 }
 
-.nav_link {
-    color: #F8F6F4;
-    text-decoration: none;
-    transition: color 0.2s linear;
-    margin-right: 50px;
-	padding-top: 45px;
+.header__social__item {
+    color: #dab33e;
+    cursor: pointer;
+    font-size: 15px;
 }
 
-.nav_link:hover {
-    border-top: 3px solid rgba(255, 255, 255, 0.7);
-	padding-top: 42px;
+.header__social__item:hover {
+	transform: scale(1.2);
 }
 
-.header_social {
-    margin-left: -40px;
-    margin-top: 45px;
-    font-size: 21px;
+.header_back {
+    top: 0;
+    position: absolute;
+    background: linear-gradient(to top, rgba(299, 299, 299, 0), rgba(0, 0, 0, 0.7));
+    width: 100%;
+    height: 120px;
+    z-index: 0;
 }
 
-.header_link {
-    padding-left: 18px;
-    color: rgb(218, 179, 62);
-    transition: transform .1s linear;
+.promo__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.header_link:hover {
-    transform: scale(1.2);
+.promo__title {
+    padding-top: 96px;
+    font-family: "Yeseva One", sans-serif;
+    font-size: 90px;
+    color: white;
+    line-height: 117px;
+
+    width: 970px;
+}
+
+.promo__decoration {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    width: 230px;
+    margin-left: 5px;
+}
+
+.promo__buttons {
+    padding-bottom: 141px;
+}
+
+.promo__button__light {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 227px;
+	cursor: pointer;
+    height: 57px;
+    border: 1px solid white;
+    background: rgba(299, 299, 299, 0.2);
+}
+
+.promo__button__light:not(:last-child){
+    margin-right: 25px;
+}
+
+.promo__button__light:hover{
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 227px;
+    height: 57px;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -150,7 +192,7 @@ nav {
 
 .about_text {
     margin-top: 107px;
-    margin-left: 120px;
+    margin-left: 115px;
     width: 415px;
     height: 500px;
     font-family: "Lato", serif;
